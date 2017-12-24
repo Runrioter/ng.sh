@@ -1,0 +1,57 @@
+set bell-style audible
+set bind-tty-special-chars on
+set blink-matching-paren on
+set comment-begin "# "
+set convert-meta off
+set echo-control-characters on
+set enable-bracketed-paste off
+set enable-keypad off
+set enable-meta-key on
+set expand-tilde off
+set history-size 500
+set horizontal-scroll-mode off
+set input-meta on
+set output-meta on
+set meta-flag on
+set keyseq-timeout 500
+set mark-directories on
+set mark-modified-lines off
+set mark-symlinked-directories off
+set match-hidden-files on
+set revert-all-at-newline off
+
+# completion
+set disable-completion off
+set skip-completed-text on
+### completion color setting
+set colored-completion-prefix on
+set colored-stats on
+set visible-stats on
+### completion display
+set completion-display-width -1
+set completion-prefix-display-length 0
+set completion-query-items 100
+set completion-ignore-case on
+### completion-ignore-case must be `on` to make completion-map-case work
+set completion-map-case on
+set page-completions on
+set menu-complete-display-prefix off
+set print-completions-horizontally off
+set show-all-if-ambiguous off
+set show-all-if-unmodified off
+
+# editing mode
+set show-mode-in-prompt on
+set editing-mode emacs
+
+$if mode=emacs
+    set keymap emacs
+    set emacs-mode-string @
+$else
+    set keymap vi
+    set vi-cmd-mode-string "(cmd)"
+    set vi-ins-mode-string "(ins)"
+$endif
+
+# key binding
+"TAB": menu-complete

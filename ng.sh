@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+# ngsh
 
-echo 'WIP'
-
+export NGSH="$HOME/.ngsh"
+export INPUTRC="$NGSH/config/.inputrc"

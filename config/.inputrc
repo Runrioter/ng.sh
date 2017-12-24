@@ -53,5 +53,7 @@ $else
     set vi-ins-mode-string "(ins)"
 $endif
 
+# system config
+$include /etc/inputrc
 # key binding
-"TAB": menu-complete
+$include key-binding.inputrc
